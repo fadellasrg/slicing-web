@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <nav class="navbar navbar-light">
+                    <a href="index.html">
+                        <img src="assets\strip.png" class="img-thumbnail" alt="Menu">
+                    </a>
+                    <div class="text-center" style="font-size: 30px; font-weight: bold;">Food Items</div>
+                    <img src="assets\search.png" class="img-thumbnail" alt="Search">
+                </nav>
+            </div>
+            <div id="cart-hidden" class="col-md-4 text-center" style="font-weight: bold; font-size: 30px;box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);">Cart
+                <span class="badge rounded-pill text-white" style="background-color: rgba(16, 220, 235, 0.911);">3</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 text-center">
+                <nav id="side-bar" class="navbar navbar-light">
+                    <img src="assets\fork.png" class="img-fluid" alt="Food">
+                    <img src="assets\clipboard.png" class="img-fluid" alt="Clipboard">
+                    <img src="assets\add.png" class="img-fluid" alt="Add">
+                </nav>
+            </div>
+            <div class="col-md-7 col-sm-12 col-7 text-center">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 text-justify">
+                            <img src="assets\menu1.png" class="figure-img img-fluid rounded" alt="Drink">
+                            <div>Espresso</div>
+                            <div class="price">Rp. 10.000</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-justify">
+                            <div id="content">
+                                <img src="assets\menu2.png" class="figure-img img-fluid rounded" alt="Drink">
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="white" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            <div>Coffee Latte</div>
+                            <div class="price">Rp. 15.000</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-justify">
+                            <img src="assets\menu3.png" class="figure-img img-fluid rounded" alt="Drink">
+                            <div>Cappucino</div>
+                            <div class="price">Rp. 5.000</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 text-justify">
+                            <img src="assets\menu4.png" class="figure-img img-fluid rounded" alt="Drink">
+                            <div>Red Velvet Latte</div>
+                            <div class="price">Rp. 33.000</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-justify">
+                            <img src="assets\menu5.png" class="figure-img img-fluid rounded" alt="Dessert">
+                            <div>Choco Rhum</div>
+                            <div class="price">Rp. 28.000</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-justify">
+                            <div id="content">
+                                <img src="assets\menu6.png" class="figure-img img-fluid rounded" alt="Dessert">
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="white" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            <div>Black Forest</div>
+                            <div class="price">Rp. 30.000</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 text-justify">
+                            <img src="assets\menu7.png" class="figure-img img-fluid rounded" alt="Food">
+                            <div>Chicken Katsu Dabu-dabu</div>
+                            <div class="price">Rp. 60.000</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-justify">
+                            <div id="content">
+                                <img src="assets\menu8.png" class="figure-img img-fluid rounded" alt="Food">
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="white" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                            <div>Salmon Truffle Teriyaki</div>
+                            <div class="price">Rp. 60.000</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-justify">
+                            <img src="assets\menu9.png" class="figure-img img-fluid rounded" alt="Food">
+                            <div>Wiener Schnitzel</div>
+                            <div class="price">Rp. 69.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="container-fluid">
+                    <div class="row cart">
+                        <div class="col-md-4">
+                            <img src="assets\menu2.png" class="figure-img img-fluid rounded" alt="Drink">
+                        </div>
+                        <div class="col-md-4">Coffee Latte
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-primary">-</button>
+                            <button type="button" class="btn btn-outline-secondary" disabled>1</button>
+                            <button type="button" class="btn btn-outline-primary">+</button>
+                          </div>
+                        </div>
+                        <div class="col-md-4 price">Rp. 15.000</div>
+                    </div>
+                    <div class="row cart">
+                        <div class="col-md-4">
+                            <img src="assets\menu6.png" class="figure-img img-fluid rounded" alt="Drink">
+                        </div>
+                        <div class="col-md-4">Black Forest
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-primary">-</button>
+                            <button type="button" class="btn btn-outline-secondary" disabled>1</button>
+                            <button type="button" class="btn btn-outline-primary">+</button>
+                          </div>
+                        </div>
+                        <div class="col-md-4 price">Rp. 30.000</div>
+                    </div>
+                    <div class="row cart">
+                        <div class="col-md-4">
+                            <img src="assets\menu8.png" class="figure-img img-fluid rounded" alt="Drink">
+                        </div>
+                        <div class="col-md-4">Salmon Truffle
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-primary">-</button>
+                            <button type="button" class="btn btn-outline-secondary" disabled>1</button>
+                            <button type="button" class="btn btn-outline-primary">+</button>
+                          </div>
+                        </div>
+                        <div class="col-md-4 price">Rp. 60.000</div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">Total :</div>
+                            <div class="col-md-6" style="padding-left: 80px;">Rp. 105.000*</div>
+                            <div class="col-md-12">*Belum termasuk PPN</div>
+                            <div class="col-md-12">
+                                <button id="btn-checkout" class="btn pink-btn" type="button">Checkout</button>
+                                <script>
+                                    document.getElementById('btn-checkout').addEventListener('click', function(){
+                                    document.querySelector('.bg-modal').style.display = 'flex';
+                                    });
+                                </script>
+                                <a href="index.html" class="btn blue-btn" type="button">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+
+    <div class="bg-modal">
+        <div class="modal-content container-fluid">
+            <div class="row">
+                <div style="padding-bottom: 40px;" class="col-md-6">
+                    <div style="font-size: 20px;">Checkout</div>
+                    <div style="font-size: 12px;">Cashier: Pevita Pearce</div>
+                </div>
+                <div class="col-md-6 text-right">
+                    <div>Receipt no: #010410919</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-8 col-8 pop-menus">
+                    <div>Coffee Latte 1x</div>
+                    <div>Black Forest 1x</div>
+                    <div>Salmon Truffle Teriyaki 1x</div>
+                    <div>Ppn 10%</div>
+                </div>
+                <div class="col-md-6 col-sm-4 col-4 text-right pop-price">
+                    <div>Rp. 15.000</div>
+                    <div>Rp. 30.000</div>
+                    <div>Rp. 60.000</div>
+                    <div>Rp. 10.500</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <div style="padding-top: 20px;">Total: Rp. 115.500</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div>Payment: Cash</div>
+                </div>
+            </div>
+            <div id="bottom-btn-checkout" class="container-fluid text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn pop-pink" type="button">Print</button>
+                    </div>
+                    <div class="col-md-12">Or
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn pop-blue" type="button">Send Email</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
